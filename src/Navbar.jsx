@@ -13,17 +13,15 @@ const Navbar =()=>{
     return(
     < >
     <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor:'#81b214'}} >
-        <a class="navbar-brand btn text-white font-weight-bolder align-self-center" id="sidebarCollapse">
-            <FormatAlignLeftIcon />
-            Controller
+        <a className="navbar-brand btn text-white font-weight-bolder pl-0" id="sidebarCollapse"><FormatAlignLeftIcon /> Controller
         </a>
-            <ul class="navbar-nav ml-auto ">
-                <li class="nav-item dropdown dropdown-item-text">
-                    <a class="nav-link dropdown-toggle pr-3" href="#" id="navbarDropdownMenuLink" 
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Account  </a>
-                    <div class="dropdown-menu  bg-white border-0" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#"><PermIdentityIcon /> Login</a>
-                        <a class="dropdown-item" href="#"><LoyaltyIcon /> Signup</a>     
+            <ul className="navbar-nav ml-auto ">
+                <li className="nav-item dropdown dropdown-item-text">
+                    <a className="nav-link dropdown-toggle pr-4 text-white" href="#" id="navbarDropdownMenuLink" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account </a>
+                    <div className="dropdown-menu  bg-white border-0 position-absolute" aria-labelledby="navbarDropdownMenuLink">
+                    <a className="dropdown-item " href="#">  <PermIdentityIcon /> Login</a>
+                        <a className="dropdown-item" href="#"><LoyaltyIcon /> Signup</a>     
                     </div>
                 </li>
             </ul>

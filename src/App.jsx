@@ -1,5 +1,5 @@
 import React from "react"
-import Sidebar from "./Sidebar"
+import Body from "./Body"
 import Navbar from "./Navbar"
 import Footer from "./Footer";
 
@@ -9,7 +9,7 @@ const App = () =>
     return (
         <>
         <Navbar />
-        <Sidebar />
+        <Body />
         <Footer />
         </>
     )
