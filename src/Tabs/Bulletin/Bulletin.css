@@ -1,0 +1,89 @@
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+   .imp_links a{
+        font-size: 1.5em ;
+    }
+   .calender{
+       font-size: 3.5em !important;
+   }
+    .heading{
+        font-size:2em ;
+    }
+    .news p{
+         font-size:1.2em;
+    }
+    .news em{
+        font-size: 1.2em;
+   }
+   .breadcrumb{
+       font-size: 1.2em;
+   }
+   .pagination_div li{
+    font-size: 1.2em;
+    } 
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+   
+    .imp_links a{
+        font-size: 1.5em ;
+    }
+    .calender{
+       font-size:2.5em !important ;
+   }
+    .heading{
+        font-size:2em ;
+    }
+    .news p{
+         font-size: 1.3em;
+    }
+    .news em{
+        font-size: 1.1em;
+   }
+   .breadcrumb{
+       font-size: 1.2em;
+   }
+   .calender{
+    font-size: 6em;
+    }   
+   .pagination_div li{
+    font-size: 1.2em;
+    }
+
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .imp_links a{
+        font-size: 1.2em;
+    }
+    .news p{
+         font-size: .8em;
+    }
+    .heading{
+        font-size: 1.2em;
+    }
+    .news em{
+        font-size: 1em;
+   }
+   .breadcrumb{
+       font-size: 1em;
+   }
+   .pagination_div li{
+       font-size: 1em;
+   }
+
+}
+
+
+
+
+

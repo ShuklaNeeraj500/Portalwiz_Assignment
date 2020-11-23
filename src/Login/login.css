@@ -1,0 +1,15 @@
+.login{
+    margin-top: 8rem;
+ }
+.login  .input_field{
+     border:0px !important;
+     border-bottom:1px solid grey !important;
+     border-radius: 0 !important;
+ }
+.login h2 {
+     font-family: 'Montserrat', sans-serif;
+     color:#174873;
+ }
+ .login ::placeholder{
+     color:rgba(143, 137, 137, 0.863) !important;
+ }

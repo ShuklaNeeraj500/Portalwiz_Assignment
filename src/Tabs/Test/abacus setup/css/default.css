@@ -1,0 +1,31 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: black;
+    margin-left: 0px;
+}
+
+input[type=number] {
+    width: 50px;
+}
+
+input {
+    border: 1px solid;
+    margin-bottom: 3px;
+}
+
+span {
+    background-color: lightGray;
+    display: block;
+}
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0;
+}
+

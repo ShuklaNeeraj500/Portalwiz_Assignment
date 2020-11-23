@@ -1,0 +1,15 @@
+ .signup{
+    margin-top: 8rem;
+ }
+ .signup .input_field{
+     border:0px !important;
+     border-bottom:1px solid grey !important;
+     border-radius: 0 !important;
+ }
+ .signup h2{
+     font-family: 'Montserrat', sans-serif;
+     color:#174873;
+ }
+ .signup ::placeholder{
+     color:rgba(143, 137, 137, 0.863) !important;
+ }

@@ -1,0 +1,258 @@
+/* --Making the two logo toggle's when sidebar opens and close-- */
+
+/* #sidebar.active .small-logo {
+    display: none;
+} */
+#sidebar.active .big-logo {
+    display: block;
+}
+#sidebar.active .icon-Sidebar-active{
+    display: none;
+}
+#sidebar .big-logo{
+    display: none;
+}
+/* #sidebar .small-logo {
+    display:block;
+} */
+#sidebar ul li .main-tabs{
+    display: none;
+}
+
+/* --making the icons on closed sidebar to align center and having some vertical separation between them-- */
+#sidebar .link{
+    display: flex;
+    justify-content: center;
+    padding : .5em 0;
+}
+/* -----displaying the open Sidebar Properly----- */
+#sidebar.active .link{
+    display: block;
+    padding :0;
+}
+
+/* --Making the drop-Links of tabs to disappear when sidebar is closed-- */
+
+/* -------------------------Styling Sidebar-Start------------------------- */
+
+/* --------Styling Open-Sidebar--------- */
+#sidebar.active {
+    background: #29567D;
+    color: #fff;
+    min-width: 230px;
+    max-width: 245px;
+    border:none;
+}
+#sidebar.active .nav_container {
+    padding: 10px 0px;
+}
+#sidebar.active ul li .main-tabs{
+    font-weight: 500;
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 0 10px 20px;
+    display: block;
+}
+#sidebar.active ul li .main-tabs:hover{
+    background-color: #1c476d;
+    transition: .2s;
+    color:white;
+}
+#sidebar.active ul.drop_menu{
+    border-left:2px solid #fff;
+    background: #29567D;
+}
+#sidebar.active ul.drop_menu li{
+    border-left: 2px solid transparent; 
+    line-height: 2pc;
+}
+#sidebar.active ul.drop_menu li:hover{
+    background-color:#1c476d ;
+    border: none;
+    border-left: 2px solid white; 
+}
+#sidebar.active ul.drop_menu li a{
+    font-weight: 400;
+    font-size: .9em;
+    text-decoration: none;
+    color:#fff;  
+    margin-left:2.5em;
+    display: block;
+}
+#sidebar.active ul.drop_menu li a:hover{
+    color:white;
+}
+#sidebar.active ul li:hover{
+    border-radius: 0; 
+    background-color:inherit; 
+}
+
+/* --------Styling closed-Sidebar--------- */
+#sidebar {
+    background:#29567D;
+    color: #fff;
+    min-width: 60px;
+    max-width: 60px;
+}
+#sidebar .Close_bar_icon{
+    color: #fff;
+}
+#sidebar .drop_menu li a{
+    display:none;
+}
+#sidebar .Close_bar_icon:hover{
+    text-decoration: none;
+    border-radius: 50%; 
+    background-color:#E89801; 
+    color: #fff;
+}
+
+#sidebar .icon-Sidebar-active{
+    display: block ;
+    font-size: large;
+    padding : 8px ;
+    position: relative;
+}
+#sidebar ul li:hover{
+    border-radius: 50%; 
+    background-color:#E89801; 
+    color: #fff;
+}
+.sidebar_popup{
+    display: flex;
+    align-items:center;
+    color:white;
+    padding: .1em 0 .2em .2em;
+    margin:0;
+    font-size:1.1rem;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    border-bottom: 1px solid white;
+}
+ .menu-item {
+    color:#fff;
+    display: flex;
+    align-items: center;
+    font-size: .95em;
+    letter-spacing: .6px;
+    line-height: 2pc;
+ }
+ .menu-item:hover{
+    color:white;
+    background-color:#1c476d ;
+ }
+
+/* ---------------------------Introducing Scrollbar in Sidebar------------------------ */
+#sidebar.active .sidebar_content{
+    position: sticky;
+    top:60px;
+    max-height: 75vh;
+    overflow-y: auto;
+}
+#sidebar .sidebar_content{
+    position: sticky;
+    top:100px;
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+/* ----------------------------------------Scroll-bar-css- Start------------------------ */
+
+.sidebar_content::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+.sidebar_content::-webkit-scrollbar-button {
+  width: 55px;
+  height: 55px;
+}
+.sidebar_content::-webkit-scrollbar-thumb {
+  background: #29567D;
+  border: 0px none;
+  border-radius: 0;
+}
+.sidebar_content::-webkit-scrollbar-thumb:hover {
+  background: #29567D;
+}
+.sidebar_content::-webkit-scrollbar-thumb:active {
+  background: #29567D;
+}
+.sidebar_content::-webkit-scrollbar-track {
+  background: #f3ecec;
+  border: 0px none;
+  border-radius: 0px;
+
+}
+.sidebar_content::-webkit-scrollbar-track:hover {
+  background: #f3ecec ;
+}
+.sidebar_content::-webkit-scrollbar-track:active {
+  background: #29567D;
+}
+.sidebar_content::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ------------Scroll-bar-css- End---------------- */
+
+
+
+/* -------------------------------------------Media Query--------------------------------------- */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+
+}
+
+
+
+@media (max-width: 767.98px) {
+
+    #sidebar {
+        /* text-align: center; */
+        margin-left: -60px;
+    }
+    #sidebar.active {
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 1023;
+        height:100%;
+        min-width:60%;
+        box-shadow :2px 0 5px rgba(0, 0, 0, .5);
+        margin-left:0;
+    }
+    #sidebar.active .sidebar_content{
+        position: static;
+
+    }
+
+   
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #sidebar {
+        /* text-align: center; */
+        margin-left: -60px;
+    }
+    #sidebar.active {
+        margin-left:0;
+    }
+    #sidebar.active .sidebar_content{
+        position: static;
+
+    }
+
+
+
+
+}

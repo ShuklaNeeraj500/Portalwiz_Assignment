@@ -2,12 +2,107 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+
 }
 body{
-    background-color: #f1f1e8;
-    
+    height:100%; 
 }
-.footer{
-    background-color:#81b214;
-   
+button:focus {outline:0;}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
+/* --------------Changin bootstrap button look ---- */
+.btn-primary {
+    color: #fff;
+    background-color: #2b7cc4;
+    border-color: #2b7cc4;
+  }
+  
+.btn-primary:hover {
+    color: #fff;
+    background-color: #356b9b;
+    border-color: #356b9b;
+  }
+/* ------------------ */
+.Action_icon {
+    color:grey;
+    margin:0 .3em
+}
+.Action_icon:hover {
+    color:#000;
+}
+.Tab_page{
+    min-height: 100vh;
+}
+.btn_link{
+    font-weight:500;
+    letter-spacing: .2px;
+    display: inline-flex;
+    text-align: center;
+}
+/* -------------- */
+.nav_tab{
+    color :black;
+    padding-bottom: .5rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.nav_tab:hover{
+    color:#3282b8;
+}
+.nav_tab.active{
+    border-bottom:2px solid #3282b8;
+}
+/* --------------- */
+.Breadcrumb{
+    background-color: #f8f9fa;
+    margin-top: .5rem;
+    padding: 0 0 .1rem 1rem ;
+}
+.Breadcrumb strong{
+    font-weight: 500;
+}
+/* --------------- */
+#mtable_Row{
+    background-color: #fff !important;
+    transition: .2ms !important;
+ 
+}
+#mtable_Row:hover td {
+    background-color: #f8f9fa !important;
+    color:#3282b8 !important;
+    -webkit-box-shadow: 2px 2px 2px 0px !important;
+    -moz-box-shadow: 2px 2px 2px 0px !important;
+    box-shadow: 2px 2px 2px 0px !important;
+}
+/* ------------- react-toastify notification--------- */
+.Toastify__toast-container {
+  margin: -.3em;
+}
+.Toastify__toast { 
+    letter-spacing:1px;
+    padding-left: 1.2em;
+    font-size: .95em;
+    min-height: auto;
+    box-shadow: none;
+    border-radius: 8px;
+}
+.Toastify__toast--info {
+    background: #CCE5FF;
+    color:#31708F
+  }
+  .Toastify__toast--success {
+    background: #DFF0D8;
+    color:#69763D
+  }
+  .Toastify__toast--warning {
+    background: #FCF8E3;
+    color:#E6B66A
+  }
+  .Toastify__toast--error {
+    background: #f1d9d9;
+    color:#af4c65
+  }
+
